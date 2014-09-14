@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pj_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/pj_title"
+            android:gravity="center_vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp" >
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.78"
+                android:background="@drawable/pj_et_01"
+                android:text="蒋老师"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.58"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/begin_photo_record_btn"
+                    style="@style/function_button"
+                    android:background="@drawable/selector_pj_tphoto" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp" >
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="165dp"
+                android:layout_weight="1.78" >
+
+                <EditText
+                    android:id="@+id/ed_text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pj_et_02"
+                    android:gravity="top"
+                    android:maxLines="20"
+                    android:singleLine="false"
+                    android:text="见谅，我现在正忙，待会联系你"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+                <SurfaceView
+                    android:id="@+id/mSurfaceView"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:visibility="visible" />
+
+                <VideoView
+                    android:id="@+id/videoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.58"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="160/1"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/show_image_stoprecord_btn"
+                    style="@style/function_button"
+                    android:background="@drawable/selector_pj_showimage" />
+
+                <Button
+                    android:id="@+id/play_record_btn"
+                    style="@style/function_button"
+                    android:background="@drawable/selector_pj_goback" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <ImageButton
+                android:id="@+id/input_num_btn_0"
+                style="@style/edge_button"
+                android:background="@drawable/selector_pj_0" />
+
+            <Button
+                android:id="@+id/input_num_btn_1"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_1" />
+
+            <Button
+                android:id="@+id/input_num_btn_2"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_2" />
+
+            <Button
+                android:id="@+id/input_num_btn_3"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_3" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                style="@style/edge_button"
+                android:background="@drawable/selector_pj_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <Button
+                android:id="@+id/regulationButton"
+                style="@style/edge_button"
+                android:background="@drawable/selector_pj_a" />
+
+            <Button
+                android:id="@+id/input_num_btn_4"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_4" />
+
+            <Button
+                android:id="@+id/input_num_btn_5"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_5" />
+
+            <Button
+                android:id="@+id/input_num_btn_6"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_6" />
+
+            <Button
+                android:id="@+id/stop_record_goback_btn"
+                style="@style/edge_button"
+                android:background="@drawable/selector_pj_num" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <Button
+                android:id="@+id/judge_btn"
+                style="@style/edge_button"
+                android:background="@drawable/selector_pj_z" />
+
+            <Button
+                android:id="@+id/input_num_btn_7"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_7" />
+
+            <Button
+                android:id="@+id/input_num_btn_8"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_8" />
+
+            <Button
+                android:id="@+id/input_num_btn_9"
+                style="@style/center_button"
+                android:background="@drawable/selector_pj_9" />
+
+            <Button
+                android:id="@+id/change_photo_record_btn"
+                style="@style/edge_button"
+                android:background="@drawable/selector_pj_up" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/pj_or_tongzi"
+            style="@style/edge_button"
+            android:background="@drawable/selector_pj_four" />
+
+            <Button
+                android:id="@+id/stop_sufaceview_btn"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pj_set" />
+
+        <Button
+            android:id="@+id/space_change"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tz" />
+
+        <Button
+            android:id="@+id/B_4"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_pj_dot" />
+
+        <Button
+            android:id="@+id/enter_text_btn"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_pj_enter" />
+
+        <Button
+            android:id="@+id/B_6"
+            style="@style/edge_button"
+            android:background="@drawable/selector_pj_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <EditText
+            android:id="@+id/output_et_0"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/pj_output_02"
+            android:focusable="false"
+            android:gravity="center"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="#FFFFFF"
+            android:textSize="11.5sp" />
+
+        <EditText
+            android:id="@+id/output_et_1"
+            style="@style/bottom_EditText"
+            android:background="@drawable/pj_output_02"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/output_et_2"
+            style="@style/bottom_EditText"
+            android:background="@drawable/pj_output_02"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/output_et_3"
+            style="@style/bottom_EditText"
+            android:background="@drawable/pj_output_02"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/output_et_4"
+            style="@style/bottom_EditText"
+            android:background="@drawable/pj_output_02"
+            android:focusable="false" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix"
+        android:visibility="gone" />
+    
+</FrameLayout>
